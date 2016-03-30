@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.iis.datacapturer.Data">
+
+    <item
+        android:id="@+id/edit"
+        android:title="Edit"
+        android:icon="@android:drawable/ic_menu_edit"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/delete"
+        android:title="Edit"
+        android:icon="@android:drawable/ic_delete"
+        app:showAsAction="always"
+        />
+
+</menu>

@@ -1,0 +1,16 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Capture</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_data">Capture</string>
+    <string name="title_activity_list">Capture</string>
+    <string name="message">This is done</string>
+    <string name="title_activity_edit">Capture</string>
+    <string name="title_activity_log_in">Capture</string>
+    <string name="title_activity_sign_up">Capture</string>
+    <string name="deleteAll_title">Confirmation</string>
+    <string name="delAll_message">Are you sure you want to permanently delete ALL entries?</string>
+    <string name="sex">Male</string>
+    <string name="sex1">Female</string>
+</resources>

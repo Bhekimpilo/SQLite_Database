@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.iis.datacapturer.EditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/nameUpdate"
+                android:hint="Name"
+                android:maxLength="15"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_below="@+id/nameUpdate"
+                android:maxLength="15"
+                android:layout_marginTop="15dp"
+                android:hint="Surname"
+                android:ems="10"
+                android:id="@+id/surnameUpdate" />
+
+            <EditText
+                android:id="@+id/dobUpdate"
+                android:inputType="date"
+                android:layout_below="@+id/surnameUpdate"
+                android:layout_marginTop="15dp"
+                android:hint="D.O.B (dd/mm/yy)"
+                android:maxLength="8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/occUpdate"
+                android:inputType="text"
+                android:layout_below="@+id/dobUpdate"
+                android:layout_marginTop="15dp"
+                android:hint="Occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/homeAdUpdate"
+                android:inputType="textPostalAddress"
+                android:layout_below="@+id/occUpdate"
+                android:layout_marginTop="15dp"
+                android:hint="Home Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/phoneUpdate"
+                android:inputType="number"
+                android:layout_below="@+id/homeAdUpdate"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cell Number" />
+
+            <EditText
+                android:id="@+id/workPhoneUpdate"
+                android:inputType="phone"
+                android:layout_below="@+id/phoneUpdate"
+                android:layout_marginTop="15dp"
+                android:hint="Work phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/workAdUpdate"
+                android:inputType="textPostalAddress"
+                android:layout_below="@id/workPhoneUpdate"
+                android:layout_marginTop="15dp"
+                android:hint="Work address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/idNoUpdate"
+                android:inputType="textPostalAddress"
+                android:layout_below="@id/workAdUpdate"
+                android:layout_marginTop="15dp"
+                android:hint="ID Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/notesUpdate"
+                android:inputType="text"
+                android:layout_below="@id/idNoUpdate"
+                android:minLines="3"
+                android:layout_marginTop="15dp"
+                android:hint="Notes (Optional)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/mCheck"
+                android:layout_below="@+id/notesUpdate"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:checked="false" />
+
+
+            <Button
+                android:id="@+id/sendBtn"
+                android:layout_width="wrap_content"
+                android:text=" Update "
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mCheck"
+                android:layout_marginTop="40dp"
+                android:textColor="#FFFFFFFF"
+                android:background="@color/background_floating_material_dark" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sendBtn"
+                android:layout_marginBottom="5sp"
+                android:layout_marginTop="30dp"
+                android:textSize="12sp"
+                android:text="Developed by Bhekimpilo ©2015."
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/holo_red_dark"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/fCheck"
+                android:checked="false"
+                android:layout_above="@+id/sendBtn"
+                android:layout_alignLeft="@+id/sendBtn"
+                android:layout_alignStart="@+id/sendBtn" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/nameEdit"
+                android:hint="Name"
+                android:maxLength="15"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_below="@+id/nameEdit"
+                android:maxLength="15"
+                android:layout_marginTop="15dp"
+                android:hint="Surname"
+                android:ems="10"
+                android:id="@+id/surnameEdit" />
+
+            <EditText
+                android:id="@+id/dobEdit"
+                android:inputType="date"
+                android:layout_below="@+id/idNoEdit"
+                android:layout_marginTop="15dp"
+                android:hint="D.O.B (dd/mm/yy)"
+                android:maxLength="8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/occEdit"
+                android:inputType="text"
+                android:layout_below="@+id/workAdEdit"
+                android:layout_marginTop="15dp"
+                android:hint="Village"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/homeAdEdit"
+                android:inputType="textPostalAddress"
+                android:layout_below="@+id/occEdit"
+                android:layout_marginTop="15dp"
+                android:hint="Garden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/phoneEdit"
+                android:inputType="number"
+                android:layout_below="@+id/dobEdit"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cell Number" />
+
+            <EditText
+                android:id="@+id/workPhoneEdit"
+                android:inputType="text"
+                android:layout_below="@+id/homeAdEdit"
+                android:layout_marginTop="15dp"
+                android:hint="Waterpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/workAdEdit"
+                android:inputType="text"
+                android:layout_below="@id/phoneEdit"
+                android:layout_marginTop="15dp"
+                android:hint="Ward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/idNoEdit"
+                android:inputType="textPostalAddress"
+                android:layout_below="@id/surnameEdit"
+                android:layout_marginTop="15dp"
+                android:hint="ID Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/notesEdit"
+                android:inputType="text"
+                android:layout_below="@id/workPhoneEdit"
+                android:minLines="3"
+                android:layout_marginTop="15dp"
+                android:hint="Notes (Optional)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                android:id="@+id/fCheck"
+                android:layout_below="@id/notesEdit"
+                android:layout_marginTop="15dp"
+                android:layout_alignLeft="@+id/showBtn"
+                android:layout_alignStart="@+id/showBtn"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/mCheck"
+                android:layout_below="@+id/notesEdit"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:checked="false" />
+
+                />
+
+
+            <Button
+                android:id="@+id/sendBtn"
+                android:layout_width="wrap_content"
+                android:text=" Save "
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mCheck"
+                android:layout_marginTop="40dp"
+                android:textColor="#FFFFFFFF"
+                android:background="@color/background_floating_material_dark" />
+
+            <Button
+                android:id="@+id/showBtn"
+                android:layout_below="@id/sendBtn"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="80dp"
+                android:text=" View Data "
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background_floating_material_dark"
+                android:textColor="#FFFFFFFF"
+                android:elegantTextHeight="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/showBtn"
+                android:layout_marginBottom="5sp"
+                android:textSize="12sp"
+                android:text="Developed by Bhekimpilo ©2015."
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/holo_red_dark"/>
+
+        </RelativeLayout>
+
+
+ </ScrollView>
+
+
+</RelativeLayout>

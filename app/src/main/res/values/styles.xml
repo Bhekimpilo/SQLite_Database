@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="MyTheme" parent="Platform.V11.AppCompat.Light">
+
+
+        </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>
